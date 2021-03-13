@@ -26,6 +26,9 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
     
     <title>Document</title>
   </head>
@@ -36,13 +39,24 @@
         <input type="color" id="col" />
       </div>
       <div class="col">
-        <input type="color" id="col" />
+        <select id="mySelect">
+            <option>Ranchers</option>
+            <option>Bell Gothic</option>
+            <option>Calibri</option>
+            <option>Courier New</option>
+        </select>
       </div>
       <div class="col">
-        <input type="color" id="col" />
+        
       </div>
     </div>
   </body>
   <script src="script.js"></script>
+  <script>
+        let activities = document.querySelector('mySelect');
+        activities.addEventListener('change', (data)=>{
+        document.getElementById('text').style.fontFamily = activities.options[activities.selectedIndex].text +""
+        });
+</script>
 </html>
 l
