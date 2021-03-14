@@ -1,7 +1,8 @@
-let inputElt1 = document.getElementById("exampleName");
-let inputElt2 = document.getElementById("exampleContent");
-let btn = document.getElementById("button");
-// on desactive le bouton quand le javascript se charge
+var inputElt1 = document.getElementById("case1");
+var inputElt2 = document.getElementById("case2");
+var btn = document.getElementById("button");
+var li = document.getElementById("my-li");
+
 btn.disabled = true;
 function isCharSet() {
   // on verifie si le champ n'est pas vide alors on desactive le bouton sinon on l'active
@@ -11,21 +12,20 @@ function isCharSet() {
     btn.disabled = true;
   }
 }
-btn.addEventListener("click", (e) => {
-  var ol = document.querySelector("ul");
+function newli() {
   var li = document.createElement("li");
-  var t = document.createElement(t);
-  var name = document.querySelector("#exampleName");
-  var content = document.querySelector("#exampleContent");
-
-  t.classList.add("fas fa-trash");
-  var text = document.createTextNode(name.value + " : " + content.value + " ");
-  li.appendChild(text);
-  li.appendChild(t);
-  li.classList.add("list-group-item");
-  ol.appendChild(li);
-
-  t.addEventListener("click", (e) => {
-    ol.removeChild(li);
+  li.setAttribute("class", "list-group-item");
+  var ul = document.getElementById("my-ul");
+  var txt = document.createTextNode("" + case1.value + " " + case2.value + " ");
+  var i = document.createElement("i");
+  i.setAttribute("class", "fas fa-trash-alt");
+  li.appendChild(txt);
+  li.appendChild(i);
+  ul.appendChild(li);
+  i.addEventListener("click", (e) => {
+    ul.removeChild(li);
   });
+}
+btn.addEventListener("click", (e) => {
+  newli();
 });

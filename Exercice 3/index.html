@@ -1,79 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Project</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
-   
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
-  <body style='background: linear-gradient(135deg,#F97794 10% , #623AA2 100%);'>
+  <body style="background: linear-gradient(135deg, #f97794 10%, #623aa2 100%)">
     <form>
       <div class="form-group">
-        <label for="exampleName" class="input">Name :</label>
+        <label for="case1" class="input">Name :</label>
         <input
           type="text"
           class="form-control"
-          id="exampleName"
+          id="case1"
           aria-describedby="NameHelp"
           placeholder="Enter Name"
-          onkeyup='isCharSet()'
+          onkeyup="isCharSet()"
         />
         <small id="NameHelp" class="form-text text-muted"
           >Please enter the Name.</small
         >
       </div>
       <div class="form-group">
-        <label for="exampleContent">Content : </label>
+        <label for="case2">Content : </label>
         <input
           type="text"
           class="form-control"
-          id="exampleContent"
+          id="case2"
           placeholder="Content"
-          onkeyup='isCharSet()'
+          onkeyup="isCharSet()"
         />
         <small id="NameHelp" class="form-text text-muted"
           >Please enter the Content .</small
         >
       </div>
-      <button  id='button' type="submit" class="btn btn-primary"  >
-        Add Todo
-      </button>
-      <div id="democontainer">
-        <p>
-        Things to do :
-        </p>
-        <div>
-            <ul>
-
-            </ul>
-        </div>
     </form>
-<script src="js/script.js"></script>
-<script src="https://kit.fontawesome.com/c519ccfd90.js" crossorigin="anonymous"></script>
-<script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-      crossorigin="anonymous"
-    ></script>
-    <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-    crossorigin="anonymous"
-  ></script>
-  <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
+    <button id="button" type="submit" class="btn btn-primary">Add Todo</button>
+    <div id="democontainer">
+      <p>Things to do :</p>
+      <div id="my-list">
+        <ul id="my-ul" class="list-group">
+        </ul>
+      </div>
+    </div>
   </body>
+  <script src="js/script.js"></script>
 </html>
