@@ -18,7 +18,7 @@ btn.addEventListener("click", (e) => {
   var name = document.querySelector("#exampleName");
   var content = document.querySelector("#exampleContent");
 
-  t.setAttribute("class", "fas fa-trash");
+  t.classList.add("fas fa-trash");
   var text = document.createTextNode(name.value + " : " + content.value + " ");
   li.appendChild(text);
   li.appendChild(t);
