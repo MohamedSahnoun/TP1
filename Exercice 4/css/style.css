@@ -1,0 +1,26 @@
+.element{
+    position:relative;
+    padding: 1.5em;
+    border-color:  black;
+    border-style:solid;
+    border-radius: 5%;
+    margin: 1.5em;
+}
+.container{
+    padding:10px;
+    background-color: #caf7e3;
+    width:100%;
+}
+p{
+    font-family: 'Ravi Prakash', cursive;
+    line-height: 1.2;
+    font-size: 2rem;
+
+    
+}
+h1{
+    color: #f39189;
+}
+.row{
+    padding: 1.5em;
+}
