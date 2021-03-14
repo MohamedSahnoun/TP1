@@ -1,0 +1,17 @@
+
+form {
+    font: 1rem/1.5 var(--bs-font-sans-serif);
+  }
+  div {
+    color: var(--bs-blue);
+  }
+  .form-group {
+    margin: 1%;
+    padding: 1%;
+    font-size: 100%;
+    min-width: 500px;
+  }
+  ul {
+    list-style: upper-roman;
+    margin: 1em;
+  }
