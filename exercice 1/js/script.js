@@ -26,7 +26,9 @@ while (replay == "Yes") {
   do {
     var utilisateur = prompt("Enter a number:");
     compteur++;
-    if (compteur == chances-1) {
+    //dans ce code on a vouly ajouter une option mais la commande  in [] ne veut pas s'executer proprement
+
+    /* if (compteur == chances-1) {
       res = prompt(
         "Do you want a hint ? in exchange you will lose 1 pt of your score (Yes/No): "
       );
@@ -52,12 +54,14 @@ while (replay == "Yes") {
             alert("The barca king ");
           }
 
-      }
+      } 
     }
+    */
   } while (compteur < chances && utilisateur != chiffre);
 
   if (utilisateur == chiffre) {
     alert("You win 😍");
+    //le score est calculé de cette maniére afin de recompensé la difficulté
     score += 12 / chances;
     won++;
   } else {

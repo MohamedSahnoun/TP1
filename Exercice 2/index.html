@@ -26,31 +26,39 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
     <title>Document</title>
   </head>
   <body>
-    <h1 id="text">Text</h1>
+    <div>
+      <h1 id="text">Text</h1>
+    </div>
+    
     <div class="row">
       <div class="col">
-        <input type="color" id="col" />
+        <input class="btn btn-outline-danger" type="color" id="color" />
       </div>
       <div class="col">
-        <select id="mySelect">
-            <option>Arial</option>
-            <option>Bell Gothic</option>
-            <option>Calibri</option>
-            <option>Courier New</option>
+        <select
+          id="mySelect"
+          class="form-select form-select-lg mb-3"
+          aria-label=".form-select-lg example"
+        >
+          <option selected>Arial</option>
+          <option value="Bell Gothic">Bell Gothic</option>
+          <option value="Calibri">Calibri</option>
+          <option value="Courier New">Courier New</option>
         </select>
       </div>
       <div class="col">
-        <input type="number" id="police" />
-      </div>
-      <div class="col">
-        
+        <label for="police" class="form-label">font size: </label>
+        <input class="form-range" type="number" id="police" />
       </div>
     </div>
   </body>

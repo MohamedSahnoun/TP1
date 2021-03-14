@@ -9,6 +9,6 @@ document.getElementById('mySelect').addEventListener('change', function(){
 });
     
     
-document.getElementById("col").addEventListener('change', function(){
+document.getElementById("color").addEventListener('change', function(){
       content.style.color = this.value;
 });
